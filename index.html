@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Styled Survey Form</title>
+</head>
+<body>
+    <h1>Devslopes Survey Form</h1>
+    <h2>Thank you for taking time to improve our platform</h2>
+    <br>
+    <div class="form-bkg">
+        <form action="" method="post">
+            <label for="name">Name</label><br>
+            <input class="box" required type="text" name="name" id="name" placeholder="Enter your Name"><br><br>
+            <label for="email">Email</label><br>
+            <input class="box" required type="email" name="email" id="email" placeholder="Enter your E-mail"><br><br>
+            <label for="age">Age (Optional)</label><br>
+            <input class="box" type="number" name="age" id="age" placeholder="Enter your age"><br><br>
+            
+            <p>Which option best describes your current role?</p>
+            <select class="box" name="role" id="role">
+                <option value="student">Student</option>
+                <option value="ftjob">Full Time Job</option>
+                <option value="ftlearn">Full Time Learner</option>
+                <option value="nosay">Prefer Not to Say</option>
+                <option value="other">Other</option>
+                <option value="default" selected>Select current role</option>
+            </select><br><br>
+           
+            <p>Would you recommend Devslopes to a friend?</p>
+            <input 
+            type="radio" 
+            name="recommend" id="definitely">
+            <label for="definitely">Definitely</label><br>
+            <input 
+                type="radio" 
+                name="recommend" 
+                id="maybe">
+            <label for="maybe">Maybe</label><br>
+            <input 
+            type="radio" 
+            name="recommend" 
+            id="notsure">
+            <label for="notsure">Not Sure</label>
+            <br>
+            <br>
+            <p>What's your favorite feature of Devslopes?</p>
+            <select class="box" name="feature" id="feature">
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="mentorship">Mentorship</option>
+                <option value="default" selected> Select an option</option>
+            </select><br><br>
+            <p>What would you like to see improved? (Check all that apply)</p>
+            <input type="checkbox" name="improve" id="frontend">
+            <label for="frontend">Front-end Projects</label><br>
+            <input type="checkbox" name="improve" id="backend">
+            <label for="backend">Back-end Projects</label><br>
+            <input type="checkbox" name="improve" id="challenges">
+            <label for="challenges">Challenges</label><br>
+            <input type="checkbox" name="improve" id="videos">
+            <label for="videos">Videos</label><br>
+            <input type="checkbox" name="improve" id="meetups">
+            <label for="meetups">Online Meetups</label><br>
+            <input type="checkbox" name="inprove" id="community">
+            <label for="community">Community</label><br><br>
+
+            <p>Any comments or suggestions?</p>
+            <textarea  class="box"name="comments" id="comments" cols="30" rows="10"></textarea>
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
